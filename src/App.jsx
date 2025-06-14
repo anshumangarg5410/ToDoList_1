@@ -3,33 +3,33 @@ import "./App.css";
 import { Todoprovider } from "./components"
 
 function App() {
-  const [todos, settodos] = useState([]);
+//   const [todos, settodos] = useState([]);
 
-  const addTodo  = (todo) => {
-    settodos((prev) => [{ {id: Date.now(), ...todo }, ...prev}])
-  }
+//   const addTodo  = (todo) => {
+//     settodos((prev) => [{ {id: Date.now(), ...todo }, ...prev}])
+//   }
 
-  const setTodo = () => {
-    settodos((prev) => prev.map((prevTodo) > (prevTodo.id=== id ? todo : prevTodo)))
-  }
+//   const setTodo = () => {
+//     settodos((prev) => prev.map((prevTodo) > (prevTodo.id=== id ? todo : prevTodo)))
+//   }
 
-  const removeTodo(id) => prev.filter((todo) => todo.id !== id)
+//   const removeTodo(id) => prev.filter((todo) => todo.id !== id)
 
-  const toggleTodo = (id) => {
-    setTodos((prev) => prev.map((prevTodo) => prevTodo === id ? {...prevTodo, completed: !prevtodo.completed} : prevTodo))
-  }
+//   const toggleTodo = (id) => {
+//     setTodos((prev) => prev.map((prevTodo) => prevTodo === id ? {...prevTodo, completed: !prevtodo.completed} : prevTodo))
+//   }
 
-  useEffect (() => {
-    const todos = JSON.parse(localStorage.getItem("todos"))
+//   useEffect (() => {
+//     const todos = JSON.parse(localStorage.getItem("todos"))
 
-    if (todos && todos.length > 0) {
-      settodos(todos)
-    }
-  }, [])
+//     if (todos && todos.length > 0) {
+//       settodos(todos)
+//     }
+//   }, [])
 
-  useEffect (() => {
-    localStorage.setItem("todos", JSON.stringify(todos));
-  }, [todos])
+//   useEffect (() => {
+//     localStorage.setItem("todos", JSON.stringify(todos));
+//   }, [todos])
 
   return (
     <Todoprovider value={{todo, addTodo, removeTodo, updateTodo, toggleTodo}}>
