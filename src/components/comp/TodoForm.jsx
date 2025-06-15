@@ -1,7 +1,10 @@
+import { useState } from "react";
+import { useTodo } from "../Todocontext";
+
 function TodoForm() {
     
     const [todo, setTodo] = useState("");
-    const {addTodo} = useTodo();
+    const {addTodo} = useTodo
 
     const add = () => {
         e.preventDefault()

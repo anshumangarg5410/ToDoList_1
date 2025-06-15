@@ -36,16 +36,27 @@ function TodoItem() {
             />
         </div>
         <div className="menus h-[95%] flex justify-evenly items-center w-[15%] bg-transparent">
-            <button className="bg-green-600 editorsave h-[90%] cursor-pointer w-[45%] p-[6px] bg-transparent border-b border-t rounded-lg">
-            <div
+
+            <div className="bg-green-600 editorsave h-[90%] cursor-pointer w-[45%] p-[6px] bg-transparent border-b border-t rounded-lg">
+            <button
             className={`icon h-full w-full ${
                 isTodoEditable ? "bg-[url('./assets/pencil.png')]" : ""
             } bg-contain bg-no-repeat bg-center`}
-            />
+            onClick={() => {
+                if (todo.completed) return;
+                if (isTodoEditable) {
+                    editTodo();
+                } else setisTodoEditable((prev) => !prev);
+            }}
+            disabled = {todo.completed}
+            >
             </button>
-            <div className="bg-green-600 delete h-[90%] cursor-pointer w-[45%] p-[6px] bg-transparent border-b border-t rounded-lg">
-            <button className="icon h-full w-full bg-[url(./assets/dustbin.png)] bg-contain bg-no-repeat bg-center"></button>
             </div>
+
+            <div className="bg-green-600 delete h-[90%] cursor-pointer w-[45%] p-[6px] bg-transparent border-b border-t rounded-lg">
+            <button className={`icon h-full w-full bg-[url(./assets/dustbin.png)] bg-contain bg-no-repeat bg-center`}></button>
+            </div>
+
         </div>
         </div>
     </>
