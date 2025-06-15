@@ -17,7 +17,7 @@ function App() {
   const removeTodo = (id) => prev.filter((todo) => todo.id !== id)
 
   const toggleTodo = (id) => {
-    setTodo((prev) => prev.map((prevTodo) => prevTodo === id ? {...prevTodo, completed: !prevTodo.completed} : prevTodo))
+    setTodo((prev) => prev.map((prevTodo) => prevTodo.id === id ? {...prevTodo, completed: !prevTodo.completed} : prevTodo))
   }
 
   useEffect (() => {
