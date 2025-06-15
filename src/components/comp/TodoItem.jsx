@@ -17,8 +17,8 @@ function TodoItem({ todo }) {
 
   return (
     <>
-      <div className="task1 h-[100%] w-full flex justify-evenly items-center p-3 bg-red-600   rounded-xl">
-        <div className="tickornot bg-green-600 w-[6%] h-[90%] border-b border-t rounded-md flex bg-transparent items-center justify-center">
+      <div className="task1 h-[100%] w-full flex justify-evenly items-center p-3 bg-[rgb(51,65,85)]   rounded-xl">
+        <div className="tickornot bg-[rgb(100,116,139)] w-[6%] h-[90%] border-b border-t rounded-md flex bg-transparent items-center justify-center">
           <input
             type="checkbox"
             className="cursor-pointer"
@@ -38,7 +38,7 @@ function TodoItem({ todo }) {
           />
         </div>
         <div className="menus h-[95%] flex justify-evenly items-center w-[15%] bg-transparent">
-          <div className="bg-green-600 editorsave h-[90%] cursor-pointer w-[45%] p-[6px] bg-transparent border-b border-t rounded-lg">
+          <div className="bg-[rgb(251,191,36)] editorsave h-[90%] cursor-pointer w-[45%] p-[6px] bg-transparent border-b border-t rounded-lg">
             <button
               className={`icon h-full w-full ${
                 isTodoEditable ? "bg-[url('./assets/penciledit.png')]" : "bg-[url('./assets/pencil.png')]"
@@ -53,7 +53,7 @@ function TodoItem({ todo }) {
             ></button>
           </div>
 
-          <div className="bg-green-600 delete h-[90%] cursor-pointer w-[45%] p-[6px] bg-transparent border-b border-t rounded-lg">
+          <div className="bg-[rgb(244,63,94)] delete h-[90%] cursor-pointer w-[45%] p-[6px] bg-transparent border-b border-t rounded-lg">
             <button
               className={`icon h-full w-full bg-[url(./assets/dustbin.png)] bg-contain bg-no-repeat bg-center`}
               onClick={() => removeTodo(todo.id)}

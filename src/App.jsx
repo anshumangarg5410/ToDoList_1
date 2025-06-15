@@ -40,7 +40,7 @@ function App() {
     <Todoprovider value={{todos, addTodo, removeTodo, updateTodo, toggleTodo}}>
       <div className="main h-screen w-screen bg-[url(./assets/bg.jpg)] bg-cover bg-center bg-no-repeat flex justify-end items-center ">
         <div className="container h-[85%] w-[40%] bg-transparent flex-col flex  gap-[5%] rounded-3xl mr-[10%]">
-          <div className="header h-[15%] w-full bg-blue-600 flex flex-col justify-center  items-center font-mono font-extrabold text-[40px] text-black rounded-3xl">
+          <div className="header h-[15%] w-full bg-[rgb(20,184,166)] flex flex-col justify-center  items-center font-mono font-extrabold text-[40px] text-black rounded-3xl">
             <p>TODO LIST</p>
             <p className="text-[20px] text-white">Lets Do It!! </p>
           </div>
