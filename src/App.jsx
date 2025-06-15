@@ -41,7 +41,7 @@ function App() {
             <p1 className="text-[20px] text-white">Lets Do It!! </p1>
           </div>
 
-          <div className="spaceforlist h-[75%] w-full bg-blue-400 flex justify-center items-center rounded-3xl">
+          {/* <div className="spaceforlist h-[75%] w-full bg-blue-400 flex justify-center items-center rounded-3xl">
             <div className="taskcont w-[90%] h-[90%] bg-transparent rounded-xl">
               <div className="task1 h-[12%] w-full flex justify-evenly items-center p-3 bg-red-600 rounded-xl">
                 <div className="tickornot bg-green-600 w-[6%] h-[90%] border-b border-t rounded-md flex bg-transparent items-center justify-center">
@@ -60,7 +60,9 @@ function App() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
+
+          
         </div>
       </div>
     </Todoprovider>
