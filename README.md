@@ -9,13 +9,7 @@
 
 ### 🗒️ About
 
-🎯 A minimal and beautiful **ToDo List App** made using **React + Vite + Tailwind CSS**.  
-It helps you practice core concepts like:
-
-- State Management
-- Conditional Rendering
-- Context API
-- Clean UI with Tailwind
+🎯 A minimal and beautiful **ToDo List App** made using **React + Vite + Tailwind CSS** made for practice purpose.
 
 ---
 
