@@ -2,6 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Made with React](https://img.shields.io/badge/Made%20with-React-blue)](https://reactjs.org/)
+[![Context API](https://img.shields.io/badge/State%20Management-Context%20API-ff9800)](https://reactjs.org/docs/context.html)
 [![Tailwind CSS](https://img.shields.io/badge/Styled%20with-TailwindCSS-38B2AC.svg?logo=tailwindcss)](https://tailwindcss.com/)
 [![Hosted on GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-orange)](https://anshumangarg5410.github.io/ToDoList/)
 
